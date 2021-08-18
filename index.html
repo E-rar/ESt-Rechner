@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EST-Rechner</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <form action="" onsubmit="return false">
+    <label for="ledig">ledig</label>
+    <input type="radio" name="familienstand" id="ledig" checked="checked" onchange="changeText1()">
+    <label id="verheiratet1" for="verheiratet">verheiratet</label>
+    <input type="radio" name="familienstand" id="verheiratet" onchange="changeText2()"><br>
+
+    <label for="einkommen1" id="labelEinkommen1">Einkommen (in €) :</label>    
+    <input type="number" name="einkommen1" id="einkommen1" ><br>
+
+    <label for="einkommen2" id="labelEinkommen2" class="visible">Einkommen (Person 2 in €) :</label>    
+    <input type="number" name="einkommen2" id="einkommen2" class="visible" ><br>
+    
+    <label for="jahr">Für welches Jahr sollen die Einkommensteuern berechnet werden :</label>
+    <select id="jahr" name="jahr">
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+    </select><br><br>
+    
+    <input type="submit" onclick="rechnen()" value="berechnen!"><br>
+    <h4>Die EinkommensSteuern betragen (in €) :</h4>
+    <h4 id="ESteuern"></h4><br>
+
+    <h4>Das Nettogehalt nach den Abzügen beträgt(in €) :</h4>
+    <h4 id="nettoGehalt"></h4>
+    </form>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
