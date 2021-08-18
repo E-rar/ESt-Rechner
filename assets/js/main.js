@@ -35,42 +35,40 @@ function rechnen (){
 
     switch (document.getElementById("jahr").value) {
         case "2019":
-            if(zvE<=9744){//1.Fall
+            if(zvE<=9168){//1.Fall
                 Est=0;
                 console.log(ESt);
                 print();
 
             }
-            else if(9745<=zvE&&zvE<=14753)//2.Fall
+            else if(9169<=zvE&&zvE<=147254)//2.Fall
             {
-                let y=(zvE-9744)/10000;
-                ESt=(995.21*y+1400)*y;
+                let y=(zvE-9168)/10000;
+                ESt=(980.14*y+1400)*y;
                 console.log(ESt);
                 print();
                 
             }
-            else if(14754<=zvE&&zvE<=57918){//3.Fall
-                let z=(zvE-14753)/10000;
-                ESt=(208.85*z+2397)*z+950.96;
+            else if(14255<=zvE&&zvE<=55960){//3.Fall
+                let z=(zvE-14254)/10000;
+                ESt=(216.16*z+2397)*z+965.58;
                 console.log(ESt);
                 print();
                 
             }
-            else if(57919<=zvE&&zvE<=274612){//4.Fall
-                ESt=0.42*zvE-9136.63;
+            else if(55961<=zvE&&zvE<=265326){//4.Fall
+                ESt=0.42*zvE-8780.90;
                 console.log(ESt);
                 print();
                 
             }
             else if(zvE>=274613){//5.Fall
-                ESt=0.45*zvE-17374.99;
+                ESt=0.45*zvE-16740.68;
                 console.log(ESt);
                 print();
                 
             }
-            else{
-                console.log("haha")
-            }
+            
             
             break;
         case "2020": //_______2020!_____________
@@ -107,9 +105,6 @@ function rechnen (){
                 print();
                 
             }
-            else{
-                console.log("haha")
-            }
 
                 break;
         case "2021"://__________________________2021____________
@@ -145,9 +140,6 @@ function rechnen (){
                 console.log(ESt);
                 print();
                 
-            }
-            else{
-                console.log("haha")
             }
             
             break;
